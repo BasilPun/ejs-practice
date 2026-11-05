@@ -18,6 +18,18 @@ app.get('/', (req, res) => {
 
 });
 
+const friends = ['john', 'mena', 'bob', 'balo', 'welo', 'melo'];
+app.get('/friends', (req, res) => {
+    res.render('friends', {friends});
+
+});
+
+const movies = ['saw1', 'saw2', 'saw3', 'saw4', 'jigsaw', 'backrooms', 'obsession'];
+app.get('/movies', (req, res) => {
+    res.render('movies', {movies});
+
+});
+
 //this is the port our instance will live at
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
