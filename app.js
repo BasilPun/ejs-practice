@@ -14,7 +14,7 @@ app.use(express.static('public'));
 //at home page, render home.ejs
 app.get('/', (req, res) => {
 
-  res.render('home');
+  res.render('home', {name: 'Donald Duck', job: 'Actor', favourite_colour: 'Blue'});
 
 });
 
