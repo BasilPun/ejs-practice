@@ -3,7 +3,7 @@ import express from 'express';
 //set up a express instance
 const app = express();
 
-const PORT = 3000; // Choose an available port number
+const PORT = 3003; // Choose an available port number
 
 //config ejs
 app.set('view engine', 'ejs');

@@ -6,19 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ejs Practice</h1>
-    <h2>Hey <%=name%></h2>
-    <h3>Occupation: <%=job%></h3>
-    <p>Favourite colour: <%=favourite_colour%></p>
-    <br>
-    <p>Hi <%=name%>, I see that you work as a <%=job%>.</p>
-    <% if (job == "Actor"){%>
-        <p>Do you know any famous people?</p>
-    <%}else{%>
-        <p>That's a cool job!</p>
-   <%}%>
-   <% if (favourite_colour == "Blue"){%>
-    <p>Btw I like blue too!</p>
-    <%}%>
+    <%- include('partials/header') %>
+    <main>
+        <h1>Ejs Practice</h1>
+        <h2>Hey <%=name%></h2>
+        <h3>Occupation: <%=job%></h3>
+        <p>Favourite colour: <%=favourite_colour%></p>
+        <br>
+        <p>Hi <%=name%>, I see that you work as a <%=job%>.</p>
+        <% if (job == "Actor"){%>
+            <p>Do you know any famous people?</p>
+        <%}else{%>
+            <p>That's a cool job!</p>
+        <%}%>
+        <% if (favourite_colour == "Blue"){%>
+        <p>Btw I like blue too!</p>
+        <%}%>
+    </main>
+    <%- include('partials/footer') %>
 </body>
 </html>
